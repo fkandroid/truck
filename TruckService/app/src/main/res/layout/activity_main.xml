@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ff532b"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/search_bg">
+            <Spinner
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown"
+                android:gravity="left|center_vertical"/>
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:hint="商品名称"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="查找"/>
+
+    </LinearLayout>
+
+</LinearLayout>
